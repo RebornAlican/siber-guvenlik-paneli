@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RebornAlican Gösterge Paneli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>🛡️ RebornAlican</h1>
+            <div class="menu">
+                <a href="index.html" id="active">📊 Genel Bakış</a>
+                <a href="#">🔍Tarama Sonuçları</a>
+                <a href="#">📜 Sistem Logları</a>
+                <a href="#">⚙️ Ayarlar</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="bir">
+                <h2>Sistem Durumu</h2>
+                <p>Canlı ağ trafiği ve güvenlik olayları takibi</p>
+            </div>
+            <div class="iki">
+                <div class="card">
+                    <p>Toplam İncelenen İstek</p>
+                    <span>24,500</span>
+                </div>
+
+                <div class="card">
+                    <p>Aktif Güvenli Bağlantı</p>
+                    <span style="color: #39a449;font-size: 30px;">1,250</span>
+                </div>
+
+                <div class="card">
+                    <p>Engellenen Olaylar</p>
+                    <span style="color: red;font-size: 30px;">42</span>
+                </div>
+
+            </div>
+            <div class="üc">
+                <p>Son Olay Akışı</p>
+                <table class="tablo">
+                    <tr>
+                        <th>Zaman</th>
+                        <th>Kaynak IP</th>
+                        <th>Olay Tipi</th>
+                        <th>Durum</th>
+                    </tr>
+
+                    <tr>
+                        <th>22:15:04</th>
+                        <th>192.168.1.45</th>
+                        <th>Sistem Girişi</th>
+                        <th><button class="yes">Başarılı</button></th>
+                    </tr>
+
+                    <tr>
+                        <th>22:14:22</th>
+                        <th>10.0.0.12</th>
+                        <th>Port Taraması Tespit Edildi</th>
+                        <th><button class="no">Engellendi</button></th>
+                    </tr>
+
+                    <tr>
+                        <th>22:10:01</th>
+                        <th>192.168.1.10</th>
+                        <th>HTTP GET İstegi</th>
+                        <th><button class="yes">Normal</button></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
